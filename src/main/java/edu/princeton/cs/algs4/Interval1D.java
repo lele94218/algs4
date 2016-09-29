@@ -43,8 +43,8 @@ public class Interval1D {
      */
     public static final Comparator<Interval1D> LENGTH_ORDER = new LengthComparator();
 
-    private final double min;
-    private final double max;
+    public final double min;
+    public final double max;
 
     /**
      * Initializes a closed interval [min, max].
@@ -179,6 +179,10 @@ public class Interval1D {
         int hash1 = ((Double) min).hashCode();
         int hash2 = ((Double) max).hashCode();
         return 31*hash1 + hash2;
+    }
+
+    public int compareTo(Interval1D interval) {
+        return -1;
     }
 
     // ascending order of min endpoint, breaking ties by max endpoint

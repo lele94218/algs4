@@ -296,7 +296,7 @@ public class IndexMaxPQ<Key extends Comparable<Key>> implements Iterable<Integer
         return new HeapIterator();
     }
 
-    private class HeapIterator implements Iterator<Integer> {
+    private class  HeapIterator implements Iterator<Integer> {
         // create a new pq
         private IndexMaxPQ<Key> copy;
 

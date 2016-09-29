@@ -140,7 +140,8 @@ public final class Point2D implements Comparable<Point2D> {
      * @param that the other point
      * @return the Euclidean distance between this point and that point
      */
-    public double distanceTo(Point2D that) {
+    public double
+    distanceTo(Point2D that) {
         double dx = this.x - that.x;
         double dy = this.y - that.y;
         return Math.sqrt(dx*dx + dy*dy);
